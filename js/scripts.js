@@ -1,22 +1,27 @@
-var output;
+var output = "";
+var divByThreeAndFive = 'Ping-Pong';
+var divByThree = 'ping';
+var divByFive = 'pong';
+
 function pingPong(input) {
-  for (var i=1; i <= input; i++) {
+  for (var i=0; i <= input; i++) {
     if (i % 15 === 0) {
-      document.write('pingpong<br>');
+      output += divByThreeAndFive + '<br/>';
     } else if (i % 3 === 0) {
-      document.write('ping<br>');
+      output += divByThree + '<br/>';
     } else if (i % 5 == 0) {
-      document.write('pong<br>');
+      output += divByFive + '<br/>';
     } else {
-      document.write(i + '<br>');
+      output += i + '<br/>';
     }
   }
+  return output;
 }
 
 $(function() {
     $('form#inputQuestion').submit(function(e) {
       var input = parseInt($('input#numberInput').val());
-      $('#result').text(pingPong(input));
+      $('#result').append(pingPong(input));
       e.preventDefault();
     });
 });
