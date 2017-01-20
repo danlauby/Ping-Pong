@@ -44,4 +44,4 @@ _Please contact me at [https://github.com/danlauby](https://github.com/danlauby)
 
 *MIT*
 
-Copyright (c) 2016 **_Dan Lauby_**
+Copyright (c) 2017 **_Dan Lauby_**
