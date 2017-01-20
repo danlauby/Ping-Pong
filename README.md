@@ -10,12 +10,14 @@ _This application returns a list of numbers that are replaced by 'ping' if the u
 
 ## Specifications
 
-| Behavior   |     Input example      |  Output example |
-|------------|:----------------------:|----------------:|
-| Numbers _Not_ divisible by 3, 5 or 15 |  86 | 86      |
-| Numbers divisible by 3 are replaced with "ping" |  12 | ping            |
-| Numbers divisible by 5 are replaced with "pong" |    20   |   pong |
-| Numbers divisible by 15 are replaced with "ping-pong" | 30 |    ping-pong |
+| Behavior                                              |   Input example   |  Output example |
+|-------------------------------------------------------|:-----------------:|----------------:|
+| Numbers _Not_ divisible by 3                          | 4                 | 4               |
+| Numbers _Not_ divisible by 5                          | 8                 | 8               |
+| Numbers _Not_ divisible by 15                         | 13                | 13              |
+| Numbers divisible by 3 are replaced with "ping"       | 12                | ping            |
+| Numbers divisible by 5 are replaced with "pong"       | 20                | pong            |
+| Numbers divisible by 15 are replaced with "ping-pong" | 30                | ping-pong       |
 
 ## Setup/Installation Requirements
 
