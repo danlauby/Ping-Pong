@@ -10,21 +10,39 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ready for some ping pong?</h1>
-      <h3>Enter a number and see what you get!</h3>
-      <div class="row">
-        <form id="inputQuestion">
-          <div class="form-group">
-            <label for="numberInput">Enter your number here:</label>
-            <input type="text" id="numberInput" class="form-control">
-          </div>
-          <button type="submit" class="btn">Let's Play!</button>
-        </form>
+      <div class="jumbotron">
+        <h1>Ready for some ping pong?</h1>
+        <h3>Enter a number and see what you get!</h3>
       </div>
       <div class="row">
-        <p id="result">
+        <div class="col-sm-4">
+          <div class="well">
+            <h1>About Ping Pong</h1>
+            <h2>Author:</h2>
+            <p>Dan Lauby</p>
+            <h2>Github:</h2>
+            <p><a href="https://github.com/danlauby">danlauby</a></p>
 
-        </p>
+          </div>
+        </div>
+
+        <div class="col-sm-8">
+          <div class="well">
+            <form id="inputQuestion">
+              <div class="form-group">
+                <label for="numberInput">Enter your number here:</label>
+                <input type="text" id="numberInput" class="form-control">
+              </div>
+              <button type="submit" class="btn">Let's Play!</button>
+            </form>
+
+            <div class="row">
+              <p id="result">
+
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
