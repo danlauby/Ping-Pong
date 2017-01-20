@@ -12,7 +12,8 @@ _This application returns a list of numbers that are replaced by 'ping' if the u
 
 | Behavior                                              |   Input example   |  Output example |
 |-------------------------------------------------------|:-----------------:|----------------:|
-| Numbers _Not_ divisible by 3                          | 4                 | 4               |
+| Iterate over user input number and display            | 4                 | 1234            |
+| Numbers _Not_ divisible by 3                          | 5                 | 5               |
 | Numbers _Not_ divisible by 5                          | 8                 | 8               |
 | Numbers _Not_ divisible by 15                         | 13                | 13              |
 | Numbers divisible by 3 are replaced with "ping"       | 12                | ping            |

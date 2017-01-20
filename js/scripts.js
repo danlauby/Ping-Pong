@@ -1,10 +1,13 @@
 var output;
 function pingPong(input) {
-  for (var i=1; i <= input; i++)
-  {
-    document.write(i + "<br>");
-  }
+  for (var i=1; i <= input; i++) {
+    if (i % 3 === 0) {
+      document.write('ping<br>');
 
+    } else {
+      document.write(i + '<br>');
+    }
+  }
 }
 
 $(function() {
