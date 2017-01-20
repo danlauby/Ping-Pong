@@ -21,7 +21,12 @@ function pingPong(input) {
 $(function() {
     $('form#inputQuestion').submit(function(e) {
       var input = parseInt($('input#numberInput').val());
-      $('#result').append(pingPong(input));
+      if (!input) {
+        $('#result').append('Please enter a number');
+      } else {
+        $('#result').append(pingPong(input));
+      }
+      
       e.preventDefault();
     });
 });
