@@ -4,7 +4,7 @@ var divByThree = 'ping';
 var divByFive = 'pong';
 
 function pingPong(input) {
-  for (var i=0; i <= input; i++) {
+  for (var i=1; i <= input; i++) {
     if (i % 15 === 0) {
       output += divByThreeAndFive + '<br/>';
     } else if (i % 3 === 0) {
@@ -20,13 +20,15 @@ function pingPong(input) {
 
 $(function() {
     $('form#inputQuestion').submit(function(e) {
+      $('#result').empty();
       var input = parseInt($('input#numberInput').val());
+      var answer = pingPong(input);
       if (!input) {
         // $('#result').hide();
         $('#warning').show();
       } else {
         $('#warning').hide();
-        $('#result').append(pingPong(input)).show();
+        $('#result').append(answer).show();
       }
       e.preventDefault();
     });
