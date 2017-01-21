@@ -1,8 +1,10 @@
+// Initialize variables
 var output = "";
 var divByThreeAndFive = 'Ping-Pong';
 var divByThree = 'ping';
 var divByFive = 'pong';
 
+// Business logic
 function pingPong(input) {
   for (var i=1; i <= input; i++) {
     if (i % 15 === 0) {
@@ -18,13 +20,13 @@ function pingPong(input) {
   return output;
 }
 
+// User logic
 $(function() {
     $('form#inputQuestion').submit(function(e) {
       $('#result').empty();
       var input = parseInt($('input#numberInput').val());
       var answer = pingPong(input);
       if (!input) {
-        // $('#result').hide();
         $('#warning').show();
       } else {
         $('#warning').hide();
