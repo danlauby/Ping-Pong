@@ -28,7 +28,7 @@ _This application returns a list of numbers that are replaced by 'ping' if the u
 * _Enter random number_
 * _Get your results_
 
-_Only a web browser is necessary to play. _
+_Only a web browser is necessary to play_
 
 ## Known Bugs
 
