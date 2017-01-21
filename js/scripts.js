@@ -26,7 +26,7 @@ $(function() {
       } else {
         $('#result').append(pingPong(input));
       }
-      
+      $('#result').show();
       e.preventDefault();
     });
 });
