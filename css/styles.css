@@ -82,3 +82,13 @@ input#numberInput {
   border-radius: 5px;
   padding-bottom: 10px;
 }
+
+#warning {
+  display: none;
+  color: #202120;
+  text-align: center;
+  background-color: #d3c1b8;
+  margin: 15px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}

@@ -22,11 +22,12 @@ $(function() {
     $('form#inputQuestion').submit(function(e) {
       var input = parseInt($('input#numberInput').val());
       if (!input) {
-        $('#result').append('Please enter a number');
+        // $('#result').hide();
+        $('#warning').show();
       } else {
-        $('#result').append(pingPong(input));
+        $('#warning').hide();
+        $('#result').append(pingPong(input)).show();
       }
-      $('#result').show();
       e.preventDefault();
     });
 });
