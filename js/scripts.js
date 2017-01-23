@@ -23,7 +23,6 @@ function pingPong(input) {
 // User logic
 $(function() {
     $('form#inputQuestion').submit(function(e) {
-      $('#result').empty();
       var input = parseInt($('input#numberInput').val());
       var answer = pingPong(input);
       if (!input) {
@@ -32,6 +31,7 @@ $(function() {
         $('#warning').hide();
         $('#result').append(answer).show();
       }
+      $('input#numberInput').val('');
       e.preventDefault();
     });
 });
